@@ -4,7 +4,7 @@ import redis
 from flask import Flask, render_template, redirect, request, url_for, make_response
 import uuid
 import json
-#test1234567891011
+#test
 if 'VCAP_SERVICES' in os.environ: # I must be in Prod in PWS
     VCAP_SERVICES = json.loads(os.environ['VCAP_SERVICES'])
     CREDENTIALS = VCAP_SERVICES["rediscloud"][0]["credentials"]
